@@ -1,0 +1,89 @@
+﻿@font-face {
+  font-family: 'Glyphicons Halflings';
+
+  src: url('fonts/glyphicons-halflings-regular.eot');
+  src: url('fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), 
+      url('fonts/glyphicons-halflings-regular.woff2') format('woff2'), 
+      url('fonts/glyphicons-halflings-regular.woff') format('woff'), 
+      url('fonts/glyphicons-halflings-regular.ttf') format('truetype'), 
+      url('fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: #ecf0f5;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="select"] {
+    max-width: 280px;
+}
+
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc,
+table.dataTable thead .sorting {
+   background-image:none !important;
+   position:relative
+} 
+
+
+table.dataTable thead .sorting:after {
+    opacity: 0.2;
+    content: "\e150";
+}
+table.dataTable thead .sorting_asc:after {
+    content: "\e155";
+}
+table.dataTable thead .sorting_desc:after {
+    content: "\e156";
+}
+
+
+table.dataTable thead .sorting
+{
+    
+
+}
+
+table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_desc:after, table.dataTable thead .sorting_asc_disabled:after, table.dataTable thead .sorting_desc_disabled:after {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    display: block;
+    font-family: 'Glyphicons Halflings';
+    opacity: 0.3;
+}
+
+.dataTables_wrapper .dataTables_processing{
+    font-size:50px
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .jumbotron {
+        margin-top: 20px;
+    }
+    .body-content {
+        padding: 0;
+    }
+}

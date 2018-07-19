@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="DataTableWithWebForm.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+    <title>DevKidos - Datattable withh Webform</title>
+
+    <!-- This is not require for datatable --->
+    <link href="Contents/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <%--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" />--%>
+    <link href="Contents/font-awesome.min.css" rel="stylesheet" />
+    <!-- DataTables -->
+    <link href="Contents/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="Contents/responsive.dataTables.min.css" rel="stylesheet" />
+
+    <link href="Contents/Site.css" rel="stylesheet" />
+    <script src="Contents/jQuery/jquery-2.2.3.min.js"></script>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div class="wrapper"> 
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+                <h2>Datatable with Webform</h2>
+                <br />
+                <section class="content">
+                    <div class="box">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </section>
+
+            </div>
+            <!-- /.content-wrapper -->
+            <footer class="main-footer"> 
+                <strong>Copyright &copy; DevKidos <%=System.DateTime.Now.Year.ToString() %>.  All rights
+                reserved.</strong>
+            </footer>
+        </div>
+
+    </form>
+    <script src="Contents/jquery.dataTables.min.js"></script>
+    <script src="Contents/dataTables.responsive.min.js"></script>
+
+</body>
+</html>
